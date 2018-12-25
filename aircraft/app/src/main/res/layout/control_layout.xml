@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_weight="4"
+    android:background="@mipmap/beijing">
+
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/setBt"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/shezhi01" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dp">
+            <com.example.admin.aircraft.customview.RockerView
+                android:id="@+id/rocker"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginBottom="10dp"
+                android:background="@mipmap/yaogao02"
+                app:rockerBackground="@mipmap/yuanxin"
+                app:rockerCallBackMode="CALL_BACK_MODE_STATE_CHANGE"
+                app:rockerScale="0.4"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:layout_weight="5"
+            android:orientation="horizontal"
+            android:background="@mipmap/shangbiao">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="状态:未连接"
+                android:textSize="20dp"
+                android:textColor="@color/color_dark"
+                android:layout_marginTop="10dp"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_centerInParent="true">
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:background="@mipmap/youmenzhi01"
+                android:text="1111"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:background="@mipmap/fangxiangzhi01"
+                android:text="1111"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp">
+
+
+            <SeekBar
+                android:id="@+id/seekbar"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:maxHeight="8dp"
+                android:minHeight="8dp"
+                android:progress="50"
+                android:progressDrawable="@drawable/seekbar_bg"
+                android:splitTrack="false"
+                android:thumb="@mipmap/fazhi03"
+                android:thumbOffset="0dip"
+                android:layout_centerHorizontal="true"/>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="48dp"
+                android:layout_marginBottom="1dp"
+                android:background="@mipmap/feiji01"/>
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignBottom="@id/button"
+                android:layout_centerHorizontal="true"
+                android:background="@mipmap/luxiang01" />
+
+            <Button
+                android:id="@+id/yuyingBt"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignBottom="@id/button"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="43dp"
+                android:layout_marginBottom="1dp"
+                android:background="@mipmap/yuying01" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:textOff="关"
+                android:textOn="开"
+                android:thumb="@drawable/switch_thumb"
+                android:track="@drawable/switch_track" />
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/switch1"
+                android:layout_marginLeft="10dp"
+                android:background="@mipmap/shengyin01"/>
+
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:layout_marginRight="5dp">
+
+            <com.example.admin.aircraft.customview.RockerView
+                android:id="@+id/rocker2"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginBottom="10dp"
+                android:background="@mipmap/yaogao"
+                app:rockerBackground="@mipmap/yuanxin"
+                app:rockerCallBackMode="CALL_BACK_MODE_STATE_CHANGE"
+                app:rockerScale="0.4" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
